@@ -6,8 +6,6 @@
   <title>Psychic Guesser!</title>
 
   <!-- Added link to the jQuery Library and game.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
   <!-- Added a link to reset css from default browser and add Bootstrap-->
   <link rel="stylesheet" href="assets/css/reset.css">
@@ -21,11 +19,18 @@
 
     <p>Guess what letter I'm thinking of</p>
 
-    <p class="float-left">Wins: </p><div id="winCount" class="clearfix">--variable--</div>
+    <p class="float-left">Wins: </p>
+    <div id="winCount" class="clearfix"></div>
 
-    <p>Losses: </p>
+    <p class="float-left">Losses: </p>
+    <div id="lossCount" class="clearfix"></div>
 
-    <p>Guesses Left: </p>
+    <p class="float-left">Guesses Left: </p>
+    <div id="guessCount" class="clearfix"></div>
 
-    <p>Your guesses so far: </p>
+    <p class="float-left">Your guesses so far: </p>
+    <div id="totalGuess" class="clearfix"></div>
+
+
 </body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
