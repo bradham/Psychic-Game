@@ -2,34 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Psychic Guesser!</title>
+    <meta charset="UTF-8">
+    <title>Psychic Guesser!</title>
 
-  <!-- Added link to the jQuery Library and game.js -->
+    <!-- Added link to the jQuery Library and game.js -->
 
-  <!-- Added a link to reset css from default browser and add Bootstrap-->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Added a link to reset css from default browser and add Bootstrap-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 </head>
 
 <body>
+        <h1 class="mx-3">The Psychic Game</h1>
 
-    <h1>The Psychic Game</h1>
+        <p class="mx-3">Guess what letter I'm thinking of</p>
 
-    <p>Guess what letter I'm thinking of</p>
+        <p class="float-left mx-3">Wins: </p>
+        <div id="winCount" class="clearfix"></div>
 
-    <p class="float-left">Wins: </p>
-    <div id="winCount" class="clearfix ml-5"></div>
+        <p class="float-left mx-3">Losses: </p>
+        <div id="lossCount" class="clearfix"></div>
 
-    <p class="float-left">Losses: </p>
-    <div id="lossCount" class="clearfix ml-5"></div>
+        <p class="float-left mx-3">Guesses Left: </p>
+        <div id="guessCount" class="clearfix"></div>
 
-    <p class="float-left">Guesses Left: </p>
-    <div id="guessCount" class="clearfix ml-5"></div>
-
-    <p class="float-left">Your guesses so far: </p>
-    <div id="charGuess" class="clearfix ml-5"></div>
+        <p class="float-left mx-3">Your guesses so far: </p>
+        <div id="charGuess" class="clearfix"></div>
 
 
 </body>
