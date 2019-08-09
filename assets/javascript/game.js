@@ -3,17 +3,15 @@
 var winCount = document.getElementById("winCount");
 var lossCount = document.getElementById("lossCount");
 var guessCount = document.getElementById("guessCount");
-var totalGuess = document.getElementById("totalGuess");
+var charGuess = document.getElementById("charGuess");
 
-//Initialize the game variables and output
+//Initialize the game numbers and output
 var wins = 0;
 var losses = 0;
 var guesses = 9;
-var totalGs = 0;
 winCount.innerHTML = wins;
 lossCount.innerHTML = losses;
 guessCount.innerHTML = guesses;
-totalGuess.innerHTML = totalGs;
 
 // Captures keyboard input. Depending on the letter pressed it will "call" (execute) different functions.
 document.onkeyup = function(event) {
@@ -45,10 +43,10 @@ document.onkeyup = function(event) {
 
     if (guesses == 0) {
         guesses = 9;
+        guessCount.innerHTML = guesses;
     };
 
     //add total guesses
-    totalGs++;
-    totalGuess.innerHTML = totalGs;
+    charGuess.innerHTML += (userLetter + ", ");
 
 }
