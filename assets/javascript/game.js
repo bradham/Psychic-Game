@@ -25,7 +25,7 @@ document.onkeyup = function (event) {
     //For debugging: console.log("userLetter is: " + userLetter);
 
     //If the user's letter typed is not a-z then don't do anything.
-    if (!isLetter(userLetter)) {}
+    if (!isLetter(userLetter)) { }
     // If the letter matches the random letter then add 1 win, write it in the winCount div, and reset
     else if (userLetter === comLetter) {
         wins++;
@@ -47,7 +47,7 @@ document.onkeyup = function (event) {
             resetGame();
         };
     };
-}
+};
 
 //Reset game without erasing wins and losses.
 function resetGame() {
